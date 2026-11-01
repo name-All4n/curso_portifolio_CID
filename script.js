@@ -57,3 +57,11 @@ tema.addEventListener("click", function() {
 if (localStorage.getItem("tema") === "claro") {
     document.body.classList.add("claro");
 }
+
+for (const botao of document.querySelectorAll(".filtro")) {
+    botao.addEventListener("click", function() {
+        document.querySelector(".filtro.ativo").classList.remove("ativo");
+        botao.classList.add("ativo");
+        mostrarProjetos(botao.dataset.filtro);
+    });
+}
