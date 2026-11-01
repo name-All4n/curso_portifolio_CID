@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Allan | Portfólio</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
+    <title>Allan | Portifólio</title>
 </head>
 <body>
-    <!-- Cabeçalho -->
     <header>
         <strong>allan.</strong>
         <nav>
@@ -16,54 +15,43 @@
             <a href="#projetos">Projetos</a>
             <a href="#contato">Contato</a>
         </nav>
+        <button id="tema">☀️</button>
     </header>
 
     <main>
-        <!-- Abertura -->
         <section>
-            <img src="img/foto.jpg" alt="Foto de Allan sorrindo, de camisa azul" class="foto">
-            <h1>Oi, eu sou o Allan. <span class="destaque">Ensino tecnologia.</span></h1>
-            <p>Instrutor no Centro de Inclusão Digital da UFAL, Campus Arapiraca.</p>
+            <img src="img/foto.jpg" alt="Foto do Allan de moletom" class="foto">
+            <h1><span id="saudacao">Oi</span>, eu sou o Allan. <span class="destaque">Ensino tecnologia</span></h1>
+            <p>Instrutor no Centro de Inclusão Digital da UFAL, Campus Arapiraca</p>
             <a href="#contato" class="botao">Fale comigo</a>
         </section>
 
-        <!-- Sobre -->
         <section id="sobre">
             <h2>Sobre mim</h2>
-            <p>Gosto de <strong>ensinar</strong> e de resolver problemas com tecnologia.</p><ul>
-                <li>Comunicação</li>
-                <li>Pacote Office</li>
-                <li>Trabalho em equipe</li>
-            </ul>
+            <p>Gosto de <strong>ensinar</strong> e de resolver problemas com tecnologia.</p>
+            <ul id="habilidades"></ul>
         </section>
 
-        <!-- Projetos -->
         <section id="projetos">
             <h2>Projetos</h2>
-            <div class="cards">
-                <article class="card">
-                    <small>Extensão</small>
-                    <h3>Minicurso no CID</h3>
-                    <p>Instrutor do minicurso de criação de portfólios.</p>
-                </article>
-                <article class="card">
-                    <small>Pesquisa</small>
-                    <h3>Iniciação científica</h3>
-                    <p>Descreva aqui um projeto, monitoria ou evento.</p>
-                </article>
+                <div class="filtros">
+                    <button class="filtro ativo" data-filtro="Todos">Todos</button>
+                    <button class="filtro" data-filtro="Extensão">Extensão</button>
+                    <button class="filtro" data-filtro="Pesquisa">Pesquisa</button>
+                </div>
+                <div class="cards" id="cards"></div>
             </div>
         </section>
 
-        <!-- Contato -->
         <section id="contato">
-            <h2>Contato</h2>
             <a href="mailto:seuemail@gmail.com" class="botao">E-mail</a>
             <a href="https://linkedin.com/in/SEU-PERFIL" target="_blank" class="botao">LinkedIn</a>
+            <a href="https://www.instagram.com/allan_pedro0/" target="_blank" class="botao">Instagram</a>
         </section>
     </main>
-
     <footer>
-        <p>&copy; 2026 Allan. Feito no minicurso do CID.</p>
+        <p>&copy; 2026 Allan. Feito no minicurso de criação de portfólios.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 </html>
